@@ -6,11 +6,16 @@ class Application
 {
     public $router;
     public $request;
+    public $database;
 
-    public function __construct()
+    public static $app;
+
+    public function __construct($config)
     {
+        self::$app = $this;
         $this->request = new Request();
         $this->router = new Router();
+        $this->database = new Database($config);
     }
 
     public function run()
