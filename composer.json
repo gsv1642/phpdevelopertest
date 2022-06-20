@@ -1,0 +1,8 @@
+{
+  "name": "bay42macbookpro/php-developer-test",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  }
+}
